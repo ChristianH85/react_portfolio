@@ -2,8 +2,13 @@
   width: 30%;
   background-color: #a2a0af;
   position: absolute;
+  opacity: .2;
   z-index: 1;
 }
+
+/* .first {
+  background-color: aqua;
+} */
 
 #menu {
   width: 10%;
@@ -23,9 +28,9 @@
   padding: 0
 }
 
-body {
+/* body {
   background-color: #495057;
-}
+} */
 
 #btn {
   background-color: antiquewhite;
@@ -95,13 +100,13 @@ nav #code-desktop li:last-child {
 } */
 
 .imageHome {
-  background-color: #495057;
+  /* background-color: #495057; */
   /* background-image: url("tobago.jpg"); */
   height: 800px;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  align-content: stretch;
+  align-content: stretch; */
 }
 
 #code-footer-social li {
@@ -122,6 +127,7 @@ footer a:hover {
 #code-footer-social li {
   font-size: 1.6em;
   float: left;
+  color: #313030;
   padding-right: 0.9em;
 }
 
@@ -170,26 +176,26 @@ img {
 }
 
 #panda {
-  background-color: rgb(247, 247, 247);
+  background-color: #5a5959;
   color: rgb(17, 17, 17)rgb(158, 156, 156);
   border: 3px solid rgb(10, 10, 10);
 }
 
 #arsenal {
-  background-color: rgb(238, 13, 13);
+  background-color: #ee0d0d;
   color: rgb(236, 230, 230);
   border: 3px solid goldenrod;
 }
 
 #hocro {
-  background-color: rgb(36, 56, 44);
+  background-color: #24382c;
   color: rgb(201, 199, 99);
   border: 3px solid rgb(241, 241, 240);
 }
 
 #default {
-  background: linear-gradient(45deg, #12155f 30%, #280ad1 90%);
-  color: rgb(238, 235, 235);
+  background: #aaf7d0;
+  color: rgb(235, 238, 235);
   border: 3px solid rgb(54, 153, 235);
 }
 

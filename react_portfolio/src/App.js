@@ -4,16 +4,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -32,10 +25,11 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import ProjectCard from './Images.js'
 import { Card } from '@material-ui/core';
 import Icons from './Icons';
+import BetterBacks from 'betterbacks'; 
 
 const styles = {
   background:{
-    backgroundColor: "#a2a0af",
+    // backgroundColor: "#a2a0af",
     height:650   
       },
   root: {
@@ -52,6 +46,7 @@ const styles = {
     width: 300,
   }
 };
+
 const StyledBar = withStyles({
 root: {
   background: 'linear-gradient(45deg, #12155f 30%, 	#280ad1 90%)',
@@ -80,9 +75,11 @@ class App extends Component {
     left: false,
     bottom: false,
     right: false,
+    color:''
   };
 
   componentDidMount() {
+   this.loadBG() 
 
     Events.scrollEvent.register('begin', function () {
       console.log("begin", arguments);
@@ -92,6 +89,9 @@ class App extends Component {
       console.log("end", arguments);
     });
 
+  }
+  componentDidUpdate(){
+    this.loadBG()
   }
   scrollToTop() {
     scroll.scrollToTop();
@@ -128,7 +128,7 @@ class App extends Component {
         containerId: 'scroll-container'
       }));
   }
-  componentDidUpdate(){}
+  
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
@@ -140,20 +140,49 @@ class App extends Component {
       [side]: open,
     });
   };
+  loadBG=()=>{
+    let settings = {
+      animate: true,
+      type: 'circles',
+      density: 'low',
+      themeColor: this.state.color,
+      dark: true
+      }; 
+      
+    BetterBacks('.first', settings);
+  }
+   
+
+  handleClick=(event)=>{
+    let id= event.target.id
+    console.log(id)
+    let bg=''
+    id==="arsenal"?
+    bg ="#ee0d0d":
+    id==="panda"?
+    bg ="#5a5959":
+    id==="hocro"?
+    bg ="#0b110d":
+    bg="#aaf7d0"
+    
+    console.log(bg)
+    this.setState({color: bg})
+  }
   render() {
     const { classes } = this.props;
+    
 
     const sideList = (
       <div className={classes.list}>
         <List>
           <Avatar alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/>
-            <ListItem button  id ="default"><b>Default</b>  
+            <ListItem button  onClick={this.handleClick} id='default' name="default"><b>Default</b>  
             </ListItem>
-            <ListItem button  id ="panda"><b>Panda</b>  
+            <ListItem button onClick={this.handleClick} id='panda' name="panda"><b>Panda</b>  
             </ListItem>
-            <ListItem button  id ="arsenal"><b>Arsenal</b>  
+            <ListItem button onClick={this.handleClick} id='arsenal' name="arsenal"><b>Arsenal</b>  
             </ListItem>
-            <ListItem button  id ="hocro"><b>Holy Cross</b>  
+            <ListItem button onClick={this.handleClick} id='hocro' name="hocro"><b>Holy Cross</b>  
             </ListItem>
         </List>
         {/* <Divider />
@@ -169,7 +198,7 @@ class App extends Component {
     );
     
     return (
-      <div className={classes.background}>
+      <div className="first">
       {/* <Button variant="contained" color="primary">Hello</Button> */}
       <StyledBar position="fixed" id ="bar">
       {/* <div className='row'> */}
@@ -213,7 +242,7 @@ class App extends Component {
             <NavItem href='get-started.html'><Icon>more_vert</Icon></NavItem>
          </Navbar> */}
          
-         
+        
          <button id= "bt"><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}>Skills</Link></button>
          <div className='row'>
          <Element name="test1" className="element" >
