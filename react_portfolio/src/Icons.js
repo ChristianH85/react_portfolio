@@ -6,8 +6,8 @@ class Icons extends Component{
 
     render(){
         return(
-<div>
-            <Card>
+<section>
+            <section className="iconCard">
             <div className='row'>
             <div className="col s4 m2 offset-l2">
               <i id= "icon" className="fab fa-github"></i>
@@ -28,8 +28,8 @@ class Icons extends Component{
               <i id= "icon"class="fab fa-js-square"></i>
               </div>
               </div>
-              </Card>
-          </div>
+              </section>
+          </section>
         )}
 }
 export default Icons
