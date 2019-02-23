@@ -4,16 +4,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -32,10 +25,12 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import ProjectCard from './Images.js'
 import { Card } from '@material-ui/core';
 import Icons from './Icons';
+import BetterBacks from 'betterbacks'; 
+import bubbly from 'bubbly-bg'
 
 const styles = {
   background:{
-    backgroundColor: "#a2a0af",
+    // backgroundColor: "#a2a0af",
     height:650   
       },
   root: {
@@ -50,11 +45,20 @@ const styles = {
   //     },
   list: {
     width: 300,
+    background:'linear-gradient(45deg, #d4cd89 30%, 	#eee3a8 90%)'
   }
 };
+
+// let settings = {
+//   animate: false,
+//   type: 'circles',
+//   density: 'low',
+//   themeColor: this.state.color,
+//   dark: true
+//   }; 
 const StyledBar = withStyles({
 root: {
-  background: 'linear-gradient(45deg, #12155f 30%, 	#280ad1 90%)',
+  // background: 'linear-gradient(45deg, #12155f 30%, 	#280ad1 90%)',
   borderRadius: 3,
   border: 0,
   color: 'white',
@@ -80,10 +84,17 @@ class App extends Component {
     left: false,
     bottom: false,
     right: false,
+    bColor:'#080857',
+    fColor:'#240da7'
   };
 
   componentDidMount() {
-
+  // this.loadBG() 
+//   bubbly({
+//     colorStart: "#4c004c",
+//     colorStop: "#1a001a",
+//     bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+// });
     Events.scrollEvent.register('begin', function () {
       console.log("begin", arguments);
     });
@@ -92,6 +103,9 @@ class App extends Component {
       console.log("end", arguments);
     });
 
+  }
+  componentDidUpdate(){
+    // this.reloadBG()
   }
   scrollToTop() {
     scroll.scrollToTop();
@@ -128,7 +142,7 @@ class App extends Component {
         containerId: 'scroll-container'
       }));
   }
-  componentDidUpdate(){}
+  
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
@@ -140,20 +154,71 @@ class App extends Component {
       [side]: open,
     });
   };
+  // loadBG=()=>{
+  //   let settings = {
+  //     animate: false,
+  //     type: 'circles',
+  //     density: 'low',
+  //     themeColor: this.state.color,
+  //     dark: true
+  //     }; 
+      
+  //   BetterBacks('.first', settings);
+  // }
+  // reloadBG=()=>{
+  //   let settings = {
+  //     animate: false,
+  //     type: 'circles',
+  //     density: 'low',
+  //     themeColor: this.state.color,
+  //     dark: true
+  //     }; 
+  //     BetterBacks('.first', settings);
+  // }
+   
+
+  handleClick=(event)=>{
+    console.log(this.id)
+    let id= event.target.id
+    console.log(id)
+    let bbg=""
+    let fbg=""
+    
+    if(id==="arsenal"){
+    bbg ="#660707"
+    fbg="#a11907"
+    }else if(id==="panda"){
+    bbg ="#1d1d1d"
+    fbg="#4e4e4e"
+  }else if(id==="holy"){
+    bbg ="#133a20"
+    fbg="#0ca747"
+  }else{
+    bbg="#080857"
+    fbg="#240da7"
+  }
+    
+    console.log(bbg)
+    this.setState({
+      bColor: bbg,
+      fColor:fbg
+    })
+  }
   render() {
     const { classes } = this.props;
+    
 
     const sideList = (
       <div className={classes.list}>
-        <List>
+        <List > 
           <Avatar alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/>
-            <ListItem button  id ="default"><b>Default</b>  
+            <ListItem button  onClick={this.handleClick} id='default' name="default"><b>Default</b>  
             </ListItem>
-            <ListItem button  id ="panda"><b>Panda</b>  
+            <ListItem button onClick={this.handleClick} id='panda' name="panda"><b>Panda</b>  
             </ListItem>
-            <ListItem button  id ="arsenal"><b>Arsenal</b>  
+            <ListItem button onClick={this.handleClick} id='arsenal' name="arsenal"><b>Arsenal</b>  
             </ListItem>
-            <ListItem button  id ="hocro"><b>Holy Cross</b>  
+            <ListItem button onClick={this.handleClick} id='holy' name="hocro"><b>Holy Cross</b>  
             </ListItem>
         </List>
         {/* <Divider />
@@ -167,13 +232,23 @@ class App extends Component {
         </List> */}
       </div>
     );
+    // let settings = {
+    //   animate: false,
+    //   type: 'circles',
+    //   density: 'low',
+    //   themeColor: this.state.color,
+    //   dark: true
+    //   }; 
     
     return (
-      <div className={classes.background}>
+    
+      <div className="first">
+      
+       {/* { BetterBacks('.first', settings)} */}
       {/* <Button variant="contained" color="primary">Hello</Button> */}
-      <StyledBar position="fixed" id ="bar">
+      <StyledBar position="fixed" id ="bar" style= {{background:`linear-gradient(45deg,${this.state.bColor} 30%, ${this.state.fColor} 90%)`}}>
       {/* <div className='row'> */}
-     
+      {/* +this.state.bColor+ */}
         <Typography id='logo' variant="title" color="inherit" >
             Christian Henry
         </Typography>
@@ -186,24 +261,25 @@ class App extends Component {
         {/* <i class="fas fa-igloo"></i> */}
        
       {/* </div> */}
-           
-            
+                 
   <SwipeableDrawer
           open={this.state.left}
           onClose={this.toggleDrawer('left', false)}
           onOpen={this.toggleDrawer('left', true)}
         >
-          <div
+          {/* <div
+          id= 'list'
             tabIndex={0}
             role="button"
             onClick={this.toggleDrawer('left', false)}
             onKeyDown={this.toggleDrawer('left', false)}
-          >
+          > */}
             {sideList}
-          </div>
+          {/* </div> */}
         </SwipeableDrawer>
    
       </StyledBar>
+      
       {/* <div><NavBar/></div> */}
       
         {/* <Navbar fixed='true' className="chNav" brand='Christian' right>
@@ -213,7 +289,7 @@ class App extends Component {
             <NavItem href='get-started.html'><Icon>more_vert</Icon></NavItem>
          </Navbar> */}
          
-         
+        
          <button id= "bt"><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}>Skills</Link></button>
          <div className='row'>
          <Element name="test1" className="element" >
@@ -241,7 +317,7 @@ class App extends Component {
           
           <button id= "btn"onClick={this.scrollToTop}>To the top!</button>
           {/* <Portfolio/> */}
-          <Footer/>
+          <Footer {...this.state}/>
       </div>
     );
   }

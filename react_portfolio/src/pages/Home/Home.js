@@ -22,12 +22,12 @@ class Home extends Component{
                 {/* <div className="col s12 offset-l2 m6 offset-l4"> */}
                 <Avatar id ="avatar"alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/>
                 {/* </div> */}
+                
                     <div className="col s12 offset-l2 m8 offset-l2">
-                        <div className="card">
-                            <div className="back">
-                               <div className="card-image" >
-                               {/* <img src={require('./suit2.jpg')}alt="./suit.jpg" /> */}
-                                <span className="card-title">About Me</span>
+                        <section >
+                            <div >
+                               <div className="card-title"> 
+                               About Me
                                 </div>
                                 <div className="card-content">
                                 
@@ -35,10 +35,9 @@ class Home extends Component{
                                          the Full Stack Web Developer Bootcamp at the University of Texas, Austin. Please feel
                                         free to look around and contact me if you have any questions or opportunities. </p>
                                         <p id="thanks">Thank you for Visiting. Christian K. Henry</p>
-                                </div>
-                                
+                                </div>  
                             </div>    
-                        </div>
+                        </section>
                     </div>
                 </div>    
                         

@@ -1,8 +1,20 @@
+#random {
+  background: linear-gradient(45deg, #d4cd89 30%, #eee3a8 70%);
+}
+
 #sidenav {
   width: 30%;
-  background-color: #a2a0af;
+  background-color: #a72c1c;
   position: absolute;
+  opacity: .2;
   z-index: 1;
+}
+
+/* .first {
+  background-color: aqua;
+} */
+#list {
+  background-color: khaki;
 }
 
 #menu {
@@ -15,17 +27,21 @@
 }
 
 #thanks {
-  color: rgb(165, 140, 77);
+  background-color: rgb(252, 247, 240);
+  color: #a58c4d;
   text-align: center;
+  border-radius: 8px;
+  padding: .5em;
+  margin: 0px;
 }
 
 .MuiIconButton-root-78 {
   padding: 0
 }
 
-body {
+/* body {
   background-color: #495057;
-}
+} */
 
 #btn {
   background-color: antiquewhite;
@@ -33,21 +49,35 @@ body {
 }
 
 .footer {
+  /* background-color: #1534e4; */
+  align-content: center;
   position: static;
   left: 0;
   bottom: 0;
   width: 100%;
+
+
 }
 
 .tile {
   width: 100%;
 }
 
-#avatar {
-  width: 300px;
-  height: 300px;
-  border: solid 2px antiquewhite;
+.foot {
+  color: rgb(231, 228, 228);
   margin: auto;
+  font-size: 2em
+}
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  border: solid 4px rgb(75, 68, 60);
+  margin: auto;
+}
+
+avatar:hover {
+  opacity: .3;
 }
 
 #bt {
@@ -95,13 +125,13 @@ nav #code-desktop li:last-child {
 } */
 
 .imageHome {
-  background-color: #495057;
+  /* background-color: #495057; */
   /* background-image: url("tobago.jpg"); */
   height: 800px;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  align-content: stretch;
+  align-content: stretch; */
 }
 
 #code-footer-social li {
@@ -122,6 +152,7 @@ footer a:hover {
 #code-footer-social li {
   font-size: 1.6em;
   float: left;
+  color: #313030;
   padding-right: 0.9em;
 }
 
@@ -151,48 +182,81 @@ img {
   height: 6em;
 }
 
+
+
 .card {
   border-radius: 8px;
+  opacity: 1;
+}
+
+.card::after {
+  background-color: blue;
+  opacity: .5;
 }
 
 .card-content {
+  padding: .2em;
   border: 5px solid antiquewhite;
   /* background-color: rgba(255, 0, 0, 0.1); */
-  /* opacity: 1; */
-  color: rgb(49, 49, 177);
+  color: rgb(244, 244, 255);
   font-size: 24px;
 
 }
 
-.back {
-  background-color: rgba(0, 0, 0, .2);
+.card-title {
+  color: antiquewhite;
+  font-size: 2.5em;
+  font-weight: 650;
   /* opacity: .5; */
 }
 
+.MuiPaper-root-15 {
+  background: linear-gradient(45deg, #d3cea0 30%, #e6e4d9 70%);
+}
+
 #panda {
-  background-color: rgb(247, 247, 247);
-  color: rgb(17, 17, 17)rgb(158, 156, 156);
-  border: 3px solid rgb(10, 10, 10);
+  background: linear-gradient(45deg, #1d1d1d 30%, #4e4e4e 70%);
+  color: rgb(158, 156, 156);
+
 }
 
 #arsenal {
-  background-color: rgb(238, 13, 13);
+  background: linear-gradient(45deg, #660707 30%, #a11907 70%);
   color: rgb(236, 230, 230);
-  border: 3px solid goldenrod;
+
 }
 
-#hocro {
-  background-color: rgb(36, 56, 44);
+#holy {
+  background: linear-gradient(45deg, #133a20 30%, #0ca747 70%);
   color: rgb(201, 199, 99);
-  border: 3px solid rgb(241, 241, 240);
+
 }
 
 #default {
-  background: linear-gradient(45deg, #12155f 30%, #280ad1 90%);
-  color: rgb(238, 235, 235);
-  border: 3px solid rgb(54, 153, 235);
+  background: linear-gradient(45deg, #080857 30%, #240da7 70%);
+  color: rgb(235, 238, 235);
+
 }
 
+.section {
+  /* width: 200px;
+  height: 200px; */
+  opacity: .4;
+  display: block;
+  position: relative;
+}
+
+.section::after {
+  content: "";
+  background-color: antiquewhite;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 /* .card {
   border-radius: 8px;

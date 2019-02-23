@@ -1,34 +1,25 @@
 import React, {Component} from 'react'
-
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Footer extends Component{
     render(){
         return(
             <div>
-                 <footer className="footer  light-blue darken-2">
+                 <footer className="footer " style={{background:`linear-gradient(45deg,${this.props.bColor} 30%, ${this.props.fColor} 90%)`}}>
             <div >
-                <div className="row">
-                    <div className="col s6 offset-s3 l4 offset-l4">
-                        <h3 className="white-text">Links</h3>
-                        
+             
                         <div className="row">
-                        <ul >
-                        
-                        <div className="col s6 offset-s2 l4 offset-l2">
-                        <li><a className="white-text text-lighten-3" href="https://www.linkedin.com/in/christian-henry-27a7a7167/" target="_blank" title=" LinkedIn!"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a className="white-text text-lighten-3" href="https://github.com/ChristianH85" target="_blank" title="GitHub!"><i className="fab fa-github"></i></a></li>
+
+                        <div className="col s1 offset-l4 l1 offset-l5">
+                        <a className="foot" href="https://www.linkedin.com/in/christian-henry-27a7a7167/" title=" LinkedIn!"><i class="fab fa-linkedin"></i></a>
                         </div>
-                        <div>
-                            <li><a className="white-text text-lighten-3" href="/home">Home</a></li>
-                            <li><a className="white-text text-lighten-3" href="/portfolio">Portfolio</a></li>
-                            
+                        <div className="col s1 offset-l1  l4 offset-l1">
+                        <a className="foot" href="https://github.com/ChristianH85" title="GitHub!"><i className="fab fa-github"></i></a>
                         </div>
-                             
-                        </ul>
+
                         </div>
                     </div>
-                </div>
-            </div>
+            
 
             <div className="footer-copyright blue darken-2">
                 <div className="container">

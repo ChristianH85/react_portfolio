@@ -1828,6 +1828,13 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+betterbacks@^0.0.0-beta.1:
+  version "0.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/betterbacks/-/betterbacks-0.0.0-beta.1.tgz#cfb8ef9bb6e7005040b0c91bfa1957b7eaf6a13b"
+  integrity sha512-FtkwzZuO1gw1vIWMtHZXRNW3G6E/+5Ox1QTLdUBEqj7fHGvLh+RnKAf+UUcxk3+gM94biRyv7W1IYxcEYy7hFg==
+  dependencies:
+    stylemaker "0.0.4-beta-3"
+
 bfj@6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/bfj/-/bfj-6.1.1.tgz#05a3b7784fbd72cfa3c22e56002ef99336516c48"
@@ -2038,6 +2045,11 @@ bser@^2.0.0:
   integrity sha1-mseNPtXZFYBP2HrLFYvHlxR6Fxk=
   dependencies:
     node-int64 "^0.4.0"
+
+bubbly-bg@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/bubbly-bg/-/bubbly-bg-1.0.0.tgz#f336db37981c8603f3dd4ab1d731557896920048"
+  integrity sha512-sqTWKaeRjWywlXzDEL12z2lxhjG/hPK/0uWkl59hBSIdsA1y3GPRLHfkTelcufY0tQVtXCqKYQDvlW1XHNw53A==
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -9356,6 +9368,11 @@ stylehacks@^4.0.0:
     browserslist "^4.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
+
+stylemaker@0.0.4-beta-3:
+  version "0.0.4-beta-3"
+  resolved "https://registry.yarnpkg.com/stylemaker/-/stylemaker-0.0.4-beta-3.tgz#58e45f1e79b26b02bb35a1911e874b253d150e5d"
+  integrity sha512-RaxrskQ/x1id8HrIFvXr4QwyGLKOlpYCeHfUxf3zjAWYlkeTi4wA+r+eUdnE1S1oFya4ATvC5EKlMZP19G6f+A==
 
 supports-color@^2.0.0:
   version "2.0.0"
