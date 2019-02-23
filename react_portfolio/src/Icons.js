@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { Card } from '@material-ui/core';
+import npm from './npm.svg'
 
 
 class Icons extends Component{
@@ -26,6 +26,9 @@ class Icons extends Component{
               </div>
               <div className="col s4 m2 offset-l2">
               <i id= "icon"class="fab fa-js-square"></i>
+              </div>
+              <div className="col s4 m2 offset-l2">
+              <i id= "icon"src={npm}></i>
               </div>
               </div>
               </section>

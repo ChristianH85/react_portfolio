@@ -48,6 +48,12 @@
   color: #039be5;
 }
 
+#theme {
+  color: #6e6c6a;
+  font-size: 1.5em;
+  text-align: center
+}
+
 .footer {
   /* background-color: #1534e4; */
   align-content: center;
@@ -70,6 +76,17 @@
 }
 
 #avatar {
+  width: 200px;
+  height: 200px;
+  border: solid 4px rgb(75, 68, 60);
+  margin: auto;
+}
+
+#bagomon {
+  width: 100%;
+}
+
+#avatar2 {
   width: 200px;
   height: 200px;
   border: solid 4px rgb(75, 68, 60);
