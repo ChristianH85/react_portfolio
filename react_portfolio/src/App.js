@@ -18,7 +18,8 @@ import Grid from '@material-ui/core/Grid';
 import './App.css';
 import Home from './pages/Home/Home';
 import {SideNav, SideNavItem,Button} from 'react-materialize'
-import suit2 from './suit2.jpg'
+import tobago from './tobago.jpg'
+import me from './me.jpg'
 import Portfolio from './pages/Portfolio';
 import Footer from './Footer';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -45,6 +46,7 @@ const styles = {
   //     },
   list: {
     width: 300,
+    height:100,
     background:'linear-gradient(45deg, #d4cd89 30%, 	#eee3a8 90%)'
   }
 };
@@ -211,7 +213,8 @@ class App extends Component {
     const sideList = (
       <div className={classes.list}>
         <List > 
-          <Avatar alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/>
+            <ListItem id = "theme">THEMES</ListItem>
+          {/* <Avatar alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/> */}
             <ListItem button  onClick={this.handleClick} id='default' name="default"><b>Default</b>  
             </ListItem>
             <ListItem button onClick={this.handleClick} id='panda' name="panda"><b>Panda</b>  
@@ -220,16 +223,10 @@ class App extends Component {
             </ListItem>
             <ListItem button onClick={this.handleClick} id='holy' name="hocro"><b>Holy Cross</b>  
             </ListItem>
+        
         </List>
-        {/* <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
+        <Avatar  id ="avatar2" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={me}/>
+        <img id="bagomon" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={tobago}></img>
       </div>
     );
     // let settings = {

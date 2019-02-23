@@ -2,7 +2,7 @@ const projects= [
     {
         img:'https://alfapeople.com/uk/wp-content/uploads/sites/8/2016/01/AlfaPeople-Best-Practice-JavaScript-Code-Quality-780x551.jpg',
         title:"[Coding Connect]",
-        git:"https://github.com/ChristianH85/ut-p",
+        git:"https://github.com/ChristianH85/ut-p3",
         live:"https://ut-p3-master.herokuapp.com/",
         about:" The Final Project For the Bootcamp that lets a user create a resume-style profile and also search for jobs. Future production would add a recuiter access to view the profiles and communicate to potential applicants. My Portion of the development focused on the React front-end and Api calls for the job search"
     },{
