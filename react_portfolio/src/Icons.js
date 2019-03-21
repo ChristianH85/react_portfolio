@@ -1,12 +1,13 @@
 import React,{Component} from 'react'
-import npm from './npm.svg'
+import * as bubbly from 'bubbly-bg'
+
 
 
 class Icons extends Component{
 
     render(){
         return(
-<section>
+<section> 
             <section className="iconCard">
             <div className='row'>
             <div className="col s4 m2 offset-l2">
@@ -22,13 +23,22 @@ class Icons extends Component{
               <i id= "icon" className="fab fa-react"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon" className="fab fa-html5"></i>
+              <i id= "icon" class="fab fa-npm"></i>
+              </div>
+              <div className="col s4 m2 offset-l2">
+              <i id= "icon" class="fab fa-html5"></i>
               </div>
               <div className="col s4 m2 offset-l2">
               <i id= "icon"class="fab fa-js-square"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon"src={npm}></i>
+              <i id= "icon"class="fab fa-yarn"></i>
+              </div>
+              <div className="col s4 m2 offset-l2">
+              <i id= "icon"class="fab fa-aws"></i>
+              </div>
+              <div className="col s4 m2 offset-l2">
+              <i id= "icon"class="fab fa-handlebars"></i>
               </div>
               </div>
               </section>
