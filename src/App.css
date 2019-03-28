@@ -1,0 +1,282 @@
+#random {
+  background: linear-gradient(45deg, #4a38f1cb 30%, #c9ac07d0 70%);
+}
+
+#sidenav {
+  width: 30%;
+  background-color: #a72c1c;
+  position: absolute;
+  opacity: .2;
+  z-index: 1;
+}
+
+/* .first {
+  background-color: aqua;
+} */
+#list {
+  background-color: khaki;
+}
+
+#menu {
+  width: 10%;
+  position: absolute;
+  left: 0;
+  top: -1em;
+  color: rgb(197, 194, 191);
+
+}
+
+#thanks {
+  background-color: rgb(252, 247, 240);
+  color: #a58c4d;
+  text-align: center;
+  border-radius: 8px;
+  padding: .5em;
+  margin: 0px;
+}
+
+.MuiIconButton-root-78 {
+  padding: 0
+}
+
+/* body {
+  background-color: #495057;
+} */
+
+#btn {
+  background-color: antiquewhite;
+  color: #039be5;
+}
+
+#theme {
+  color: #6e6c6a;
+  font-size: 1.5em;
+  text-align: center
+}
+
+.footer {
+  /* background-color: #1534e4; */
+  align-content: center;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+
+}
+
+.tile {
+  width: 100%;
+}
+
+.foot {
+  color: rgb(231, 228, 228);
+  margin: auto;
+  font-size: 2em
+}
+
+#avatar {
+  width: 200px;
+  height: 200px;
+  border: solid 4px rgb(75, 68, 60);
+  margin: auto;
+}
+
+#bagomon {
+  width: 100%;
+}
+
+#avatar2 {
+  width: 200px;
+  height: 200px;
+  border: solid 4px rgb(75, 68, 60);
+  margin: auto;
+}
+
+avatar:hover {
+  opacity: .3;
+}
+
+#bt {
+  background-color: #3a332b;
+  position: absolute;
+  left: 0;
+  top: 9%;
+}
+
+#icon {
+  font-size: 4em;
+}
+
+/* .gridHead {
+  background-color: white;
+  height: auto;
+} */
+
+/* nav,
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons,
+nav .button-collapse i {
+  height: var(--height-nav);
+  line-height: var(--height-nav);
+}
+
+nav #code-desktop li:last-child {
+  margin-right: 1em;
+}
+
+nav .brand-logo {
+  font-family: var(--font-highlight);
+  font-size: 1.05em;
+  height: 1.4em;
+  letter-spacing: 0.04em;
+  top: 0.15em;
+  margin-left: 1em;
+}
+
+
+nav #code-desktop li:last-child {
+  margin-right: 1em;
+} */
+
+.imageHome {
+  /* background-color: #495057; */
+  /* background-image: url("tobago.jpg"); */
+  height: 800px;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: stretch; */
+}
+
+#code-footer-social li {
+  font-size: 1.6em;
+  float: left;
+  padding-right: 0.9em;
+}
+
+footer {
+
+  position: fixed;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#code-footer-social li {
+  font-size: 1.6em;
+  float: left;
+  color: #313030;
+  padding-right: 0.9em;
+}
+
+.footer-copyright {
+  font-size: 0.75em;
+}
+
+img {
+  width: 200px;
+  height: 250px;
+
+}
+
+#logo {
+  font-weight: 600;
+  width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  color: rgb(197, 194, 191);
+}
+
+#bar {
+  height: 8%;
+}
+
+.seperator {
+  height: 6em;
+}
+
+
+
+.card {
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.card::after {
+  background-color: blue;
+  opacity: .5;
+}
+
+.card-content {
+  padding: .2em;
+  border: 5px solid antiquewhite;
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  color: rgb(244, 244, 255);
+  font-size: 24px;
+
+}
+
+.card-title {
+  color: antiquewhite;
+  font-size: 2.5em;
+  font-weight: 650;
+  /* opacity: .5; */
+}
+
+.MuiPaper-root-15 {
+  background: linear-gradient(45deg, #d3cea0 30%, #e6e4d9 70%);
+}
+
+#panda {
+  background: linear-gradient(45deg, #1d1d1d 30%, #4e4e4e 70%);
+  color: rgb(158, 156, 156);
+
+}
+
+#arsenal {
+  background: linear-gradient(45deg, #660707 30%, #a11907 70%);
+  color: rgb(236, 230, 230);
+
+}
+
+#holy {
+  background: linear-gradient(45deg, #133a20 30%, #0ca747 70%);
+  color: rgb(201, 199, 99);
+
+}
+
+#default {
+  background: linear-gradient(45deg, #080857 30%, #240da7 70%);
+  color: rgb(235, 238, 235);
+
+}
+
+.section {
+  /* width: 200px;
+  height: 200px; */
+  opacity: .4;
+  display: block;
+  position: relative;
+}
+
+.section::after {
+  content: "";
+  background-color: antiquewhite;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* .card {
+  border-radius: 8px;
+  width: 250px;
+  height: 100%;
+} */
