@@ -30,6 +30,7 @@ import Icons from './Icons';
 
 const styles = {
   background:{
+    color:'#faebd7',
     height:650   
       },
   root: {
@@ -64,7 +65,8 @@ class App extends Component {
     bottom: false,
     right: false,
     bColor:'#080857',
-    fColor:'#240da7'
+    fColor:'#240da7',
+    bgColor:'#3a332bcb'
   };
 
   componentDidMount() {
@@ -133,25 +135,31 @@ class App extends Component {
     console.log(id)
     let bbg=""
     let fbg=""
-    
+    let cbg=""
     if(id==="arsenal"){
     bbg ="#660707"
     fbg="#a11907"
+    cbg="#4a38f1cb"
     }else if(id==="panda"){
     bbg ="#1d1d1d"
     fbg="#4e4e4e"
+    cbg="#4b4b4ad7"
   }else if(id==="holy"){
     bbg ="#133a20"
     fbg="#0ca747"
-  }else{
+    cbg="#c9ac07d0"
+  }
+  else{
     bbg="#080857"
     fbg="#240da7"
+    cbg="#3a332bcb"
   }
     
     console.log(bbg)
     this.setState({
       bColor: bbg,
-      fColor:fbg
+      fColor:fbg,
+      bgColor:cbg
     })
   }
   render() {
@@ -171,7 +179,7 @@ class App extends Component {
             <ListItem button onClick={this.handleClick} id='holy' name="hocro"><b>Holy Cross</b>  
             </ListItem>
         </List>
-        <Avatar  id ="avatar2" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={me}/>
+        {/* <Avatar  id ="avatar2" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={me}/> */}
         <img id="bagomon" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={tobago}></img>
       </div>
     );
@@ -199,31 +207,33 @@ class App extends Component {
    
       </StyledBar>
          <button id= "bt"><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500}>Skills</Link></button>
-         <div className='row'>
-         <Element name="test1" className="element" >
-          <Home/>
-          </Element>
+         <div style={{backgroundColor:`${this.state.bgColor}`}}>
+          <div className='row' >
+            <Element name="test1" className="element" >
+            <Home/>
+            </Element>
           </div>
-          <div className ="seperator"></div>
-          <div className='row'>
-          <div className="col s12 m8 offset-l2">
-          <Element name="test2" className="element" >
-          <div className ="seperator" ></div>
-          <Icons/>
-          </Element>
-          </div>
-          <div>
-          </div>
-          </div>
-          <button id= "btn"><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500}>Projects</Link></button>
-          <div className ="seperator"></div>
-          <div className ="seperator"></div>
-          <div className='row'>
-          <Element name="test3" className="element" >
-          <ProjectCard/>
-          </Element>
-          </div>
-          <button id= "btn"onClick={this.scrollToTop}>To the top!</button>
+            <div className ="seperator"></div>
+            <div className='row'>
+            <div className="col s12 m8 offset-l2">
+            <Element name="test2" className="element" >
+            <div className ="seperator" ></div>
+            <Icons/>
+            </Element>
+            </div>
+            <div>
+            </div>
+            </div>
+            <button id= "btn"><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500}>Projects</Link></button>
+            <div className ="seperator"></div>
+            <div className ="seperator"></div>
+            <div className='row'>
+            <Element name="test3" className="element" >
+            <ProjectCard/>
+            </Element>
+            </div>
+            <button id= "btn"onClick={this.scrollToTop}>To the top!</button>
+          </div>  
           <Footer {...this.state}/>
       </div>
     );

@@ -1,5 +1,5 @@
 #random {
-  background: linear-gradient(45deg, #d4cd89 30%, #eee3a8 70%);
+  background: linear-gradient(45deg, #4a38f1cb 30%, #c9ac07d0 70%);
 }
 
 #sidenav {
@@ -98,7 +98,7 @@ avatar:hover {
 }
 
 #bt {
-  background-color: antiquewhite;
+  background-color: #3a332b;
   position: absolute;
   left: 0;
   top: 9%;
