@@ -1,5 +1,18 @@
+import me from './me.jpg'
 const projects= [
     {
+        img:"https://gph.to/2WyKjS6",
+        title:"Mom's Card",
+        git:"https://github.com/ChristianH85/Moms_card",
+        live:"https://momscard.herokuapp.com/",
+        about:"React App for a birthday card beware the volume on Renee and landing page as they have louder videos"
+    },{
+        img:"https://res.cloudinary.com/dm2obdaq7/image/upload/v1547612052/dog/owjo5lnj9zacpoibbtzk.jpg",
+        title:"This Page",
+        git:"https://github.com/ChristianH85/react_portfolio",
+        live:"https://christian-k-henry.herokuapp.com/",
+        about:"This App is to serve as my portfolio and is designed in React and uses Material UI. I also took that picture."
+    },{
         img:'https://alfapeople.com/uk/wp-content/uploads/sites/8/2016/01/AlfaPeople-Best-Practice-JavaScript-Code-Quality-780x551.jpg',
         title:"[Coding Connect]",
         git:"https://github.com/ChristianH85/ut-p3",
@@ -17,7 +30,6 @@ const projects= [
         git:"https://github.com/ChristianH85/Rooted",
         live:"https://christianh85.github.io/Rooted/",
         about:"An app Designed to find conviently located temporary housing options for trip or relocation. My focus was primarily on the API calls and handling their data"
-
     }
 ]
 export default projects
