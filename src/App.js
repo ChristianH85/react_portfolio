@@ -2,29 +2,18 @@ import React, { Component } from 'react';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import List from '@material-ui/core/List';
-// import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import ListItemText from '@material-ui/core/ListItemText';
-// import InboxIcon from '@material-ui/icons/MoveToInbox';
-// import MailIcon from '@material-ui/icons/Mail';
-// import Grid from '@material-ui/core/Grid';
 import './App.css';
 import Home from './pages/Home/Home';
-// import {SideNav, SideNavItem,Button} from 'react-materialize'
 import tobago from './tobago.jpg'
-import me from './me.jpg'
-// import Portfolio from './pages/Portfolio';
 import Footer from './Footer';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import ProjectCard from './Images.js'
-// import { Card } from '@material-ui/core';
 import Icons from './Icons';
 
 
@@ -179,7 +168,6 @@ class App extends Component {
             <ListItem button onClick={this.handleClick} id='holy' name="hocro"><b>Holy Cross</b>  
             </ListItem>
         </List>
-        {/* <Avatar  id ="avatar2" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={me}/> */}
         <img id="bagomon" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={tobago}></img>
       </div>
     );
@@ -195,9 +183,9 @@ class App extends Component {
       
 
         <IconButton style ={{padding:0, width:400, }} disableRipple="true" color="inherit" aria-label="Menu">
-        <MenuIcon id="menu" onClick={this.toggleDrawer('left', true)} />
+          <MenuIcon id="menu" onClick={this.toggleDrawer('left', true)} />
         </IconButton>
-  <SwipeableDrawer
+        <SwipeableDrawer
           open={this.state.left}
           onClose={this.toggleDrawer('left', false)}
           onOpen={this.toggleDrawer('left', true)}
@@ -215,12 +203,12 @@ class App extends Component {
           </div>
             <div className ="seperator"></div>
             <div className='row'>
-            <div className="col s12 m8 offset-l2">
-            <Element name="test2" className="element" >
-            <div className ="seperator" ></div>
-            <Icons/>
-            </Element>
-            </div>
+              <div className="col s12 m8 offset-l2">
+                <Element name="test2" className="element" >
+                <div className ="seperator" ></div>
+                  <Icons/>
+                </Element>
+              </div>
             <div>
             </div>
             </div>

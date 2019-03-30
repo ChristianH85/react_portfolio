@@ -19,10 +19,7 @@ class Home extends Component{
            
            <div className ="seperator"></div>
                 <div className="row" id= "content">
-                {/* <div className="col s12 offset-l2 m6 offset-l4"> */}
                 <Avatar id ="avatar"alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={suit2}/>
-                {/* </div> */}
-                
                     <div className="col s12 offset-l2 m8 offset-l2">
                         <section >
                             <div >

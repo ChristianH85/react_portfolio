@@ -10,9 +10,6 @@
   z-index: 1;
 }
 
-/* .first {
-  background-color: aqua;
-} */
 #list {
   background-color: khaki;
 }
@@ -39,9 +36,6 @@
   padding: 0
 }
 
-/* body {
-  background-color: #495057;
-} */
 
 #btn {
   background-color: antiquewhite;
@@ -55,7 +49,6 @@
 }
 
 .footer {
-  /* background-color: #1534e4; */
   align-content: center;
   position: static;
   left: 0;
@@ -108,47 +101,8 @@ avatar:hover {
   font-size: 4em;
 }
 
-/* .gridHead {
-  background-color: white;
-  height: auto;
-} */
-
-/* nav,
-nav i,
-nav [class^="mdi-"],
-nav [class*="mdi-"],
-nav i.material-icons,
-nav .button-collapse i {
-  height: var(--height-nav);
-  line-height: var(--height-nav);
-}
-
-nav #code-desktop li:last-child {
-  margin-right: 1em;
-}
-
-nav .brand-logo {
-  font-family: var(--font-highlight);
-  font-size: 1.05em;
-  height: 1.4em;
-  letter-spacing: 0.04em;
-  top: 0.15em;
-  margin-left: 1em;
-}
-
-
-nav #code-desktop li:last-child {
-  margin-right: 1em;
-} */
-
 .imageHome {
-  /* background-color: #495057; */
-  /* background-image: url("tobago.jpg"); */
   height: 800px;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-content: stretch; */
 }
 
 #code-footer-social li {
@@ -158,7 +112,6 @@ nav #code-desktop li:last-child {
 }
 
 footer {
-
   position: fixed;
 }
 
@@ -256,8 +209,6 @@ img {
 }
 
 .section {
-  /* width: 200px;
-  height: 200px; */
   opacity: .4;
   display: block;
   position: relative;
@@ -274,9 +225,3 @@ img {
   position: absolute;
   z-index: -1;
 }
-
-/* .card {
-  border-radius: 8px;
-  width: 250px;
-  height: 100%;
-} */

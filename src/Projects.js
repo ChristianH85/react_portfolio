@@ -1,4 +1,4 @@
-import me from './me.jpg'
+
 const projects= [
     {
         img:"https://gph.to/2WyKjS6",
