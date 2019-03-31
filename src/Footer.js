@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Footer extends Component{
     render(){
@@ -9,7 +8,7 @@ class Footer extends Component{
                     <div >
                         <div className="row">
                             <div className="col s1 offset-l4 l1 offset-l5">
-                                <a className="foot" href="https://www.linkedin.com/in/christian-henry-27a7a7167/" title=" LinkedIn!"><i class="fab fa-linkedin"></i></a>
+                                <a className="foot" href="https://www.linkedin.com/in/christian-henry-27a7a7167/" title=" LinkedIn!"><i className="fab fa-linkedin"></i></a>
                             </div>
                             <div className="col s1 offset-l1  l4 offset-l1">
                                     <a className="foot" href="https://github.com/ChristianH85" title="GitHub!"><i className="fab fa-github"></i></a>

@@ -12,7 +12,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import tobago from './tobago.jpg'
 import Footer from './Footer';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Element, Events, animateScroll as scroll, scroller } from 'react-scroll'
 import ProjectCard from './Images.js'
 import Icons from './Icons';
 
@@ -159,13 +159,13 @@ class App extends Component {
       <div className={classes.list}>
         <List > 
             <ListItem id = "theme">THEMES</ListItem>
-            <ListItem button  onClick={this.handleClick} id='default' name="default"><b>Default</b>  
+            <ListItem button  onClick={this.handleClick} id='default' name="default">Default
             </ListItem>
-            <ListItem button onClick={this.handleClick} id='panda' name="panda"><b>Panda</b>  
+            <ListItem button onClick={this.handleClick} id='panda' name="panda">Panda
             </ListItem>
-            <ListItem button onClick={this.handleClick} id='arsenal' name="arsenal"><b>Arsenal</b>  
+            <ListItem button onClick={this.handleClick} id='arsenal' name="arsenal">Arsenal 
             </ListItem>
-            <ListItem button onClick={this.handleClick} id='holy' name="hocro"><b>Holy Cross</b>  
+            <ListItem button onClick={this.handleClick} id='holy' name="hocro">Holy Cross
             </ListItem>
         </List>
         <img id="bagomon" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={tobago}></img>
@@ -182,8 +182,8 @@ class App extends Component {
       
       
 
-        <IconButton style ={{padding:0, width:400, }} disableRipple="true" color="inherit" aria-label="Menu">
-          <MenuIcon id="menu" onClick={this.toggleDrawer('left', true)} />
+        <IconButton style ={{padding:0, width:400, }} color="inherit" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
+          <MenuIcon id="menu" />
         </IconButton>
         <SwipeableDrawer
           open={this.state.left}

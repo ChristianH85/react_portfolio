@@ -1,7 +1,4 @@
 import React,{Component} from 'react'
-import * as bubbly from 'bubbly-bg'
-
-
 
 class Icons extends Component{
 
@@ -23,22 +20,22 @@ class Icons extends Component{
               <i id= "icon" className="fab fa-react"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon" class="fab fa-npm"></i>
+              <i id= "icon" className="fab fa-npm"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon" class="fab fa-html5"></i>
+              <i id= "icon" className="fab fa-html5"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon"class="fab fa-js-square"></i>
+              <i id= "icon"className="fab fa-js-square"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon"class="fab fa-yarn"></i>
+              <i id= "icon"className="fab fa-yarn"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon"class="fab fa-aws"></i>
+              <i id= "icon"className="fab fa-aws"></i>
               </div>
               <div className="col s4 m2 offset-l2">
-              <i id= "icon"class="fab fa-handlebars"></i>
+              <i id= "icon"className="fab fa-handlebars"></i>
               </div>
               </div>
               </section>

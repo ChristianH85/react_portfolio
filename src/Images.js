@@ -54,7 +54,7 @@ class ProjectCard extends React.Component {
         {projects.map(pro=>{return(
         <div className= 'col s12 m4 '>
 
-      <Card className={classes.card}>
+      <Card className={classes.card} key={pro.title}>
         <CardHeader
           
           title={pro.title}
@@ -67,14 +67,14 @@ class ProjectCard extends React.Component {
         />
         <CardActions className={classes.actions} disableActionSpacing>
           <IconButton aria-label="Live" href={pro.live} >
-            <i  class="material-icons">
+            <i  className="material-icons">
               play_arrow
-          </i>
+            </i>
           </IconButton>
           <IconButton aria-label="Code" href= {pro.git}>
-            <i class="material-icons">
+            <i className="material-icons">
             code
-          </i>
+            </i>
           </IconButton>
           <IconButton
             className={classnames(classes.expand, {
