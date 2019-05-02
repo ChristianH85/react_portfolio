@@ -51,10 +51,10 @@ class ProjectCard extends React.Component {
     return (
         
         <div className='row'>
-        {projects.map(pro=>{return(
+        {projects.map((pro, index)=>{return(
         <div className= 'col s12 m4 '>
 
-      <Card className={classes.card} key={pro.title}>
+      <Card id="list"className={classes.card} key={index}>
         <CardHeader
           
           title={pro.title}

@@ -2,6 +2,13 @@
   background: linear-gradient(45deg, #33323dcb 30%, #e7dda2d0 70%);
 }
 
+#side {
+  color: #080857;
+  font-size: 4em;
+  position: static;
+  bottom: 0;
+}
+
 #sidenav {
   width: 30%;
   background-color: #a72c1c;
@@ -11,7 +18,8 @@
 }
 
 #list {
-  background-color: khaki;
+  background-color: rgba(226, 219, 150, 0.884);
+  /* height: 100%; */
 }
 
 #menu {
@@ -23,6 +31,11 @@
 
 }
 
+.rest {
+  background-color: #039be5;
+  height: 70%;
+}
+
 #thanks {
   background-color: rgb(252, 247, 240);
   color: #a58c4d;
@@ -32,8 +45,13 @@
   margin: 0px;
 }
 
+.MuiPaper-root-14 {
+  height: 80%;
+  background-color: rgba(240, 128, 128, 0.021);
+}
+
 .MuiIconButton-root-78 {
-  padding: 0
+  padding: 0;
 }
 
 
@@ -45,7 +63,8 @@
 #theme {
   color: #6e6c6a;
   font-size: 1.5em;
-  text-align: center
+  text-align: center;
+  border-bottom: dotted 2px rgba(221, 31, 31, 0.952);
 }
 
 .footer {

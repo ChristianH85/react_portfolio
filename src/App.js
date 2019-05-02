@@ -27,7 +27,7 @@ const styles = {
       },
   list: {
     width: 300,
-    height:100,
+    height:999,
     background:'linear-gradient(45deg, #d4cd89 30%, 	#eee3a8 90%)'
   }
 };
@@ -42,9 +42,9 @@ root: {
       },
   boxShadow: '0 1px 2px 2px #2c2b2b',
 },
-label: {
-  textTransform: 'capitalize',
-},
+// label: {
+//   textTransform: 'capitalize',
+// },
 })(AppBar);
 class App extends Component {
 
@@ -156,8 +156,8 @@ class App extends Component {
     
 
     const sideList = (
-      <div className={classes.list}>
-        <List > 
+      <div className={classes.list} id = "list">
+        <List id= "rest"> 
             <ListItem id = "theme">THEMES</ListItem>
             <ListItem button  onClick={this.handleClick} id='default' name="default">Default
             </ListItem>
@@ -168,7 +168,24 @@ class App extends Component {
             <ListItem button onClick={this.handleClick} id='holy' name="hocro">Holy Cross
             </ListItem>
         </List>
+        <ListItem id = "theme">NAV</ListItem>
+        <ListItem><Link activeClass="active"  to="test1" spy={true} smooth={true} duration={500}>Top</Link></ListItem>
+          <ListItem><Link activeClass="active"  to="test2" spy={true} smooth={true} duration={500}>Skills</Link></ListItem>
+          <ListItem><Link activeClass="active"  to="test3" spy={true} smooth={true} duration={500}>Projects</Link></ListItem>
+        <ListItem id = "theme">SOCIAL</ListItem>
+        <div className="row">
+          <div className="col s1 m2 offset-s2 offset-m3 ">   
+             <a id="side" href="https://www.linkedin.com/in/christian-henry-27a7a7167/" title=" LinkedIn!"><i className="fab fa-linkedin"></i></a>
+         </div> 
+         <div className="col s1 m2 offset-s2  offset-m1">
+            <a id="side" href="https://github.com/ChristianH85" title="GitHub!"><i className="fab fa-github"></i></a>
+         </div>
+        </div>
+
+        {/* <div id = "list"> */}
         <img id="bagomon" alt="https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" src={tobago}></img>
+        {/* </div> */}
+       
       </div>
     );
     
