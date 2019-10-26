@@ -1,11 +1,17 @@
 
 const projects= [
     {
-        img:"https://gph.to/2WyKjS6",
-        title:"Mom's Card",
-        git:"https://github.com/ChristianH85/Moms_card",
-        live:"https://momscard.herokuapp.com/",
-        about:"React App for a birthday card beware the volume on Renee and landing page as they have louder videos"
+        img:"http://inclusioneleveshandicap.wesign.it/uploads/picture/5bc5910943e6f.jpg",
+        title:"Whitney Access Maps",
+        git:"https://github.com/ChristianH85/Whitney-Access",
+        live:"http://whitneyaccess.herokuapp.com/",
+        about:"An app Designed to find conviently local places that are handicap accessible and have users generate and maintain list describing the ways in which a place excells or is troublesome to at accessibility "
+    },{
+        img:"https://bandzrenovations.com/static/1e6db4efd04390978e98c5824c778c83/c94c5/20191009_191401.jpg",
+        title:"B and Z Renovations",
+        git:"https://github.com/ChristianH85/B-Z-Renovations",
+        live:"https://BandZRenovations.com",
+        about:"Client Page created to showcase property listings with a CMS built in for the client to manage content"
     },{
         img:"https://res.cloudinary.com/dm2obdaq7/image/upload/v1547612052/dog/owjo5lnj9zacpoibbtzk.jpg",
         title:"This Page",
@@ -24,12 +30,6 @@ const projects= [
         git:"https://github.com/ChristianH85/ut-p3/tree/ut-p2",
         live:"https://ut-p2.herokuapp.com/",
         about:"A Social Media app for dog owners to share experiences they have with their best friend. Future Developments are adding a marketplace with ratings and comment boards. My focus was largely structuring the SQL queries and displaying results. "
-    },{
-        img:"https://arcluster.com/wp/wordpress/wp-content/uploads/2018/05/Tech.jpg",
-        title:"Rooted",
-        git:"https://github.com/ChristianH85/Rooted",
-        live:"https://christianh85.github.io/Rooted/",
-        about:"An app Designed to find conviently located temporary housing options for trip or relocation. My focus was primarily on the API calls and handling their data"
     }
 ]
 export default projects
