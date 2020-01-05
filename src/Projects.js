@@ -1,12 +1,13 @@
 
 const projects= [
+    // {
+    //     img:"http://inclusioneleveshandicap.wesign.it/uploads/picture/5bc5910943e6f.jpg",
+    //     title:"Whitney Access Maps",
+    //     git:"https://github.com/ChristianH85/Whitney-Access",
+    //     live:"http://whitneyaccess.herokuapp.com/",
+    //     about:"An app Designed to find conviently local places that are handicap accessible and have users generate and maintain list describing the ways in which a place excells or is troublesome to at accessibility "
+    // },
     {
-        img:"http://inclusioneleveshandicap.wesign.it/uploads/picture/5bc5910943e6f.jpg",
-        title:"Whitney Access Maps",
-        git:"https://github.com/ChristianH85/Whitney-Access",
-        live:"http://whitneyaccess.herokuapp.com/",
-        about:"An app Designed to find conviently local places that are handicap accessible and have users generate and maintain list describing the ways in which a place excells or is troublesome to at accessibility "
-    },{
         img:"https://bandzrenovations.com/static/1e6db4efd04390978e98c5824c778c83/c94c5/20191009_191401.jpg",
         title:"B and Z Renovations",
         git:"https://github.com/ChristianH85/B-Z-Renovations",
